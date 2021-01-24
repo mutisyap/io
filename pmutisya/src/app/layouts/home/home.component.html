@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="../../../assets/petro.jpg">
+                <div class="card-body">
+                    <h5 class="card-title mt-0">Software Engineer</h5>
+                    <p class="card-text">4+ years experience</p>
+                </div>
+                <hr class="m-0">
+                <div class="card-body">
+                    <h5 class="card-title">Projects</h5>
+                    <p class="card-text">10+ </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <h5>Projects</h5>
+            <div *ngFor="let project of projectList">
+                <div class="pull-left">
+                    <!-- <img class="" src="https://meliora.co.ke/assets/images/mulika/mulika.svg"> -->
+                </div>
+                <hr class="mt-1 mb-1">
+                <a class="card-title" href="{{project.url}}">{{project.name}}</a> 
+                <small class="float-right"> by <a
+                        href="{{project.ownerUrl}}">{{project.owner}}</a></small>
+                <p class="text-muted">{{project.elevatorPitch}}</p>
+                <small> 3 blogs</small>
+            </div>
+
+            <hr>
+
+            <h5>Skills and Technologies</h5>
+            <div>
+                <div class="pull-left">
+                    <!-- <img class="" src="https://meliora.co.ke/assets/images/mulika/mulika.svg"> -->
+                </div>
+                <hr class="mt-1 mb-1">
+                <a class="card-title">Docker</a>
+                <p class="text-muted">Mulika is a service, transactional and infrastructure monitoring solution</p>
+            </div>
+            <div hidden>
+                <ul>
+                    <li>Senior Software Engineer; <a href="https://meliora.co.ke">Meliora Technologies Limited</a></li>
+                </ul>
+                <hr class="m-1">
+                <h5>Education</h5>
+                <ul>
+                    <li>Bsc Computer Science Jomo Kenyatta University of Agriculture and Technology</li>
+                </ul>
+                <div class="card">
+                    <div class="card-header">
+                        Highlights
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
