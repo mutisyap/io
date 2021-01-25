@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MarkdownService } from 'ngx-markdown';
+
 import projects from '../../../assets/projects.json'
 
 @Component({
@@ -9,7 +11,7 @@ import projects from '../../../assets/projects.json'
 export class HomeComponent implements OnInit {
   public projectList:any = projects;
 
-  constructor() {
+  constructor(private markdownService: MarkdownService) {
    }
 
   ngOnInit(): void {
